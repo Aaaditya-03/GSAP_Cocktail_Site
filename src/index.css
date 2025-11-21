@@ -109,11 +109,11 @@ body {
             .content {
                 @apply flex lg:flex-row flex-col w-full gap-10 justify-between items-center lg:items-end mx-auto;
 
-                p:nth-of-type(2) {
+             p:nth-child(2) {
                     @apply font-modern-negra text-6xl text-yellow max-w-xl;
                 }
 
-                p:last-of-type {
+                p:last-child {
                     @apply 2xl:text-start text-center;
                 }
 
