@@ -7,11 +7,11 @@ const Hero = () => {
     const videoRef = useRef();
     const isMobile = useMediaQuery({maxWidth : 768})
     useGSAP(() => {
-        const titleSplit =SplitText.create('.title' , {
+        const titleSplit =new SplitText('.title' , {
             type : 'chars , words '
         })
 
-        const paraSplit = SplitText.create('.subtitle' , {type : 'words , lines' , mask : 'lines'})
+        const paraSplit = new SplitText('.subtitle' , {type : 'words , lines' , mask : 'lines'})
 
         titleSplit.chars.forEach((char) => char.classList.add('text-gradient'));
 
