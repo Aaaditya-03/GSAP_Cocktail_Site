@@ -22,13 +22,6 @@ const About = () => {
         })
         .from('.top-grid div , .bottom-grid div' , {ypercent : 100, opacity : 0 , ease : 'power1.inOut'    
         }, '-=0.5');
-
-        gsap.to('.img-animate' , {
-            y: 100,
-            scale: 1.5,
-            duration : 0.3,
-            ease : 'power1.inOut'
-        })
         })
   return (
     <div id="about">
@@ -62,7 +55,7 @@ const About = () => {
       <div className='top-grid'>
         <div className='md:col-span-3'>
             <div className='noisy'/>
-            <img src='/images/abt1.png' alt="grid-img-1" className='hover:img-animate' />
+            <img src='/images/abt1.png' alt="grid-img-1" />
         </div>
         <div className='md:col-span-6'>
             <div className='noisy'/>
@@ -85,6 +78,6 @@ const About = () => {
       </div>
     </div>
   );
-};
+}
 
 export default About;
